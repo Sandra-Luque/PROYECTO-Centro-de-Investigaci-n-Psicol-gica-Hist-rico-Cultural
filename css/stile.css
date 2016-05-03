@@ -1,0 +1,63 @@
+/*SECCION AREAS DE INTERES*/
+.intereses{
+	display: flex;
+	text-align: center;
+}
+.list__interesa .intres__item{
+	margin: 20px;
+}
+.intres__item img{
+	height: 200px;
+	width: 350px;
+}
+.interesest{
+	text-align: center;
+	margin: 0 420px;
+}
+.intres__itemt img{
+	height: 200px;
+	width: 350px;
+}
+/*FIN SECCION AREAS DE INTERES*/
+/*SECCION NUESTRO EQUIPO*/
+.trab{
+	text-align: center;
+	margin: auto;
+}
+.compa{
+	display: flex;
+}
+.compa .foto{
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.compa .miembro{
+	height: 250px;
+	width: 250px;
+}
+.miembro img{
+	height: 250px;
+	width: 250px;
+}
+.lista{
+	display: flex;
+}
+.lista .red{
+	display: flex;
+	list-style: none;
+}
+.red img{
+	height: 50px;
+}
+.compados{
+	display: flex;
+	padding-left: 150px;
+}
+.compados .foto{
+	margin-left: 30px;
+}
+.compados .red img{
+	height: 50px;
+}
+/*FIN SECCION NUESTRO EQUIPO

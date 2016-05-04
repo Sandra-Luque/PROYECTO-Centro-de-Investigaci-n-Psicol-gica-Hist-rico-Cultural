@@ -27,18 +27,18 @@
 .compa{
 	display: flex;
 }
-.compa .foto{
+/*.compa .foto{
 	margin-top: 60px;
 	margin-left: 20px;
-	margin-right: 10px;
-}
+	margin-right: 20px;
+}*/
 .compa .miembro{
-	height: 250px;
-	width: 250px;
+	height: 70px;
+	width: 70px;
 }
 .miembro img{
-	height: 250px;
-	width: 250px;
+	height: 70px;
+	width: 70px;
 }
 .lista{
 	display: flex;

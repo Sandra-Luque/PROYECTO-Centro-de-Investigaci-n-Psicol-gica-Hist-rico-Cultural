@@ -1,3 +1,4 @@
+/**{outline: 1px solid rgba(255,0,0,04)}*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700italic,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
@@ -144,39 +145,41 @@ menu
 }
 .compa{
 	display: flex;
+	padding: 10px 100px 30px 170px;
+	margin-bottom: 30px;
 }
 .compa .foto{
-	margin-top: 60px;
-	margin-left: 20px;
-	margin-right: 10px;
+	height: 270px;
+	width: 170px;
+	margin-left: 25px;
+}
+.compa p{
+	margin: 10px;
 }
 .compa .miembro{
-	height: 250px;
-	width: 250px;
+	height: 180px;
+	width: 170px;
 }
 .miembro img{
-	height: 250px;
-	width: 250px;
+	height: 180px;
+	width: 170px;
 }
 .lista{
 	display: flex;
+	margin-left: -40px;
 }
 .lista .red{
 	display: flex;
 	list-style: none;
+	height: 35px;
+	width: 120px;
+	padding-left: 10px;
 }
 .red img{
-	height: 50px;
+	height: 35px;
 }
-.compados{
-	display: flex;
-	padding-left: 150px;
-}
-.compados .foto{
-	margin-left: 30px;
-}
-.compados .red img{
-	height: 50px;
+.dos{
+	padding-left: 260px;
 }
 /*FIN SECCION NUESTRO EQUIPO
 

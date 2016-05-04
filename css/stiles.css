@@ -1,3 +1,4 @@
+*{outline: 1px solid rgba(255,0,0,04)}
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700italic,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
@@ -186,6 +187,16 @@ somos
 }
 /*FIN SECCION NUESTRO EQUIPO*/
 /*SECCION ENSAYO*/
+.grupo .ima{
+	height: 400px;
+	width: 300px;
+	margin: auto;
+}
+.grupo .titulo{
+	margin: auto;
+	height: 420px;
+	padding-top: 100px;
+}
 
 /*FIN SECCION ENSAYO*/
 

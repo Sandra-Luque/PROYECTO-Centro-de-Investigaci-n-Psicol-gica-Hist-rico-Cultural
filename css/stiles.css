@@ -1,7 +1,9 @@
-/**{outline: 1px solid rgba(255,0,0,04)}*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700italic,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
+section{
+	padding-top: 70px;
+}
 #header{
 	background: #fff;
 }
@@ -12,29 +14,37 @@
 	margin: 0 auto;		
 	width: 100%;
 }
-
+.cont-logoo{
+	position: relative;
+	height: 200px;
+}
+.logo-port{
+	margin:  7% 40%;
+	background: url(../img/logo.png);
+	background-repeat: no-repeat;
+	height: 200px;
+}
 
 #text_slider{
 	position: relative;
 	width: 100%;
-	height: 600px;
-	margin: 100px auto;
-	box-shadow:  0 0 5px 5px #f5720c ;
+	height: 800px;
+	
 }
 #text_slider div{
 	position: absolute;
+	top:100px;
 }
 #text_slider p{
 	text-transform: uppercase;
 	text-align: center;
-	padding: 80px;
 	font-size: 70px;
 	color:#fff;
 	font-family: 'Montserrat', sans-serif;
 }
 .cont-conc a{
 	position: absolute;
-	top: 55%;
+	top: 85%;
 	left: 45%;
  	border-radius:3px;	
 	font-family: 'Montserrat', sans-serif;
@@ -64,6 +74,9 @@ menu
 	height: 55px;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+nav{
+	height: 70px;
 }
 .g-menu{
 	max-width: 100%;
@@ -99,6 +112,7 @@ menu
 	color: #000;
 	padding-bottom: 15px;
 	font-family: 'Roboto Slab', serif;
+	font-size: 1.5em;
 	display: block;
 }
 .menu li a:hover{
@@ -110,33 +124,24 @@ menu
 	width: 100%;
 	top: 0;
 	cursor: pointer;
+	height: 70px;
 	z-index: 1000;	
 }
 
 
-
-
-
-/*SECCION AREAS DE INTERES*/
-.intereses{
-	display: flex;
+/*----------------------------------------
+somos
+-----------------------------------------*/
+#somos{
 	text-align: center;
 }
-.list__interesa .intres__item{
-	margin: 20px;
+.images{
+	background: url(../img/banner.png);
+	height: 400px;
 }
-.intres__item img{
-	height: 200px;
-	width: 350px;
-}
-.interesest{
-	text-align: center;
-	margin: 0 420px;
-}
-.intres__itemt img{
-	height: 200px;
-	width: 350px;
-}
+
+
+
 /*FIN SECCION AREAS DE INTERES*/
 /*SECCION NUESTRO EQUIPO*/
 .trab{
@@ -145,41 +150,39 @@ menu
 }
 .compa{
 	display: flex;
-	padding: 10px 100px 30px 170px;
-	margin-bottom: 30px;
 }
 .compa .foto{
-	height: 270px;
-	width: 170px;
-	margin-left: 25px;
-}
-.compa p{
-	margin: 10px;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 10px;
 }
 .compa .miembro{
-	height: 180px;
-	width: 170px;
+	height: 250px;
+	width: 250px;
 }
 .miembro img{
-	height: 180px;
-	width: 170px;
+	height: 250px;
+	width: 250px;
 }
 .lista{
 	display: flex;
-	margin-left: -40px;
 }
 .lista .red{
 	display: flex;
 	list-style: none;
-	height: 35px;
-	width: 120px;
-	padding-left: 10px;
 }
 .red img{
-	height: 35px;
+	height: 50px;
 }
-.dos{
-	padding-left: 260px;
+.compados{
+	display: flex;
+	padding-left: 150px;
+}
+.compados .foto{
+	margin-left: 30px;
+}
+.compados .red img{
+	height: 50px;
 }
 /*FIN SECCION NUESTRO EQUIPO
 
@@ -192,8 +195,18 @@ menu
 
 
 /*----------------------------------------
-menu
+revista y formulario
 -----------------------------------------*/
 .revis{
 	text-align: center;
+}
+.revitas-muestra{
+	margin: auto;
+	background: url(../img/revista-porta.jpg);
+	padding: 10px;
+	height: 300px;
+	width: 200px;
+}
+#formulario.btn-enviar{
+	width: 100%;
 }

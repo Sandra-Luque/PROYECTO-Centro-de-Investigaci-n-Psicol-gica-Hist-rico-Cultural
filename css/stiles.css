@@ -1,4 +1,4 @@
-*{outline: 1px solid rgba(255,0,0,04)}
+/**{outline: 1px solid rgba(255,0,0,04)}*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700italic,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
@@ -197,7 +197,7 @@ somos
 	height: 320px;
 	padding-top: 30px;
 }
-.grupo .titulo img{
+.grupo .ima img{
 	height: 300px;
 	width: 400px;
 }
@@ -225,3 +225,29 @@ revista y formulario
 #formulario.btn-enviar{
 	width: 100%;
 }
+.pie{
+	background-color: #000;
+	text-align: center;
+}
+.pie .caja{
+	color: #fff;
+	display: flex;
+	padding: 0;
+	margin:  -35px auto;
+}
+.pie p img{
+	height: 18px;
+	width: 18px;
+	margin-right: 15px;
+}
+.pie .web-40 .ema{
+	height: 22px;
+	width: 22px;
+}
+
+/*.pie .caja img{
+	height: 15px;
+	width: 15px;
+	margin-top: 15px;
+/*	margin-right: -100px;
+}*/

@@ -49,8 +49,15 @@ h1{
 	color: #fff;
 	font-size: 3em;
 }
+.fond-logo-port{
+	/*background: rgba(25, 144, 206, 0.2);*/
+	background: rgba(239, 244, 247, 0.2);
+	height: 100%;
+	width: 100%;
+
+}
 .logo-port{
-	margin:  10% 40%;
+	margin:  9% 40%;
 	background: url(../img/logito-2.png);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -187,7 +194,7 @@ somos
 	font-family: 'Noto Serif', serif; 
 }
 .images-1{
-	background: #0977ac;
+	background: rgba(2,184,191,0.38);
 	transition: 1s;
 }
 .images-1:hover{
@@ -196,7 +203,7 @@ somos
 	color: #fff;
 }
 .images-2{
-	background: #0977ac;
+	background: rgba(25, 145, 206,0.38);
 	transition: 1s;
 }
 .images-2:hover{
@@ -205,97 +212,92 @@ somos
 }
 
 /*FIN SECCION AREAS DE INTERES*/
-/*SECCION NUESTRO EQUIPO*/
-.trab{
-	text-align: center;
-	margin: auto;
-}
-.compa{
-	display: flex;
-}
-.compa .foto{
-	margin-top: 60px;
-	margin-left: 20px;
-	margin-right: 10px;
-}
-.compa .miembro{
-	width: 270px;
-}
-.miembro img{
-	height: 263px;
-	width: 186px;
-	border-radius: 10px;
-}
-.miembro p{
-	color: #f9a32f;
-	font-size: 1.5em;
-	margin-top: 0;
-	text-align: center;
-	font-size: 18px;
-}
-.info-miembro{
-	font-size: 12px;
-	margin-top: 0px;
-
-}
-.miembro .apell{
-	margin-top: -15px;
-}
-.lista{
-	display: flex;
-}
-.lista .red{
-	display: flex;
-	list-style: none;
-}
-.red img{
-	height: 50px;
-}
-.compados{
-	display: flex;
-	padding-left: 150px;
-}
-.compados .foto{
-	margin-left: 30px;
-}
-.compados .red img{
-	height: 50px;
-}
-/*FIN SECCION NUESTRO EQUIPO
-
-
-
-
-
-
-
 
 
 /*----------------------------------------
 revista y formulario
 -----------------------------------------*/
+.equipoo, .equipoo p{
+	text-align: center;
+}
+.equipoo p{
+	font-size: 2em;
+}
+.conte-equipo li{
+	list-style: none;
+	display: inline-block;
+}
+
+.barrita-1, .barrita-6{
+	border-bottom: 20px solid #02b8bf;
+	box-sizing: border-box;
+}
+.barrita-2, .barrita-5{
+	border-bottom: 20px solid #1990ce;
+	box-sizing: border-box;
+}
+.barrita-3, .barrita-4{
+	border-bottom: 20px solid #07bc83;
+	box-sizing: border-box;
+}
+.foto-equipo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+} 
+
+/*----------------------------------------
+revista y formulario
+-----------------------------------------*/
+
+
+.cont-redes{
+	/*background: rgba(2, 184,191, 0.3);*/
+	background: url(../img/separator2.jpg);
+	background-attachment: fixed;
+	top: 0;
+	height: 952px;
+	width: 100%;
+}
+.bakgra-redes{
+	background: rgba(17, 96, 137, 0.8);
+	height: 952px;
+	width: 100%;
+}
+.color-efect{
+	background: rgba(25, 144, 206, 0.5);
+
+}
+.color-efec-2{
+	background: rgba(25, 144, 206, 0.5);
+	color: #fff;
+}
+
+
+
 .revis{
 	text-align: center;
 }
 .revitas-muestra{
-	margin: 52px 0;
+	margin: 52px auto;
     background: url(../img/revista-porta.jpg);
-    padding: 10px;
-    background-size: contain;
     height: 560px;
     width: 410px;
 }
 
-
+.formulario{
+	margin: 25px 0 25px 0;
+}
 
 
 .contacto{
 	text-align: center;
-	border: 1px solid #CED5D7;
-	border-radius: 6px;
-	padding: 30px 30px 20px;
-	margin-top: 50px;
-	background-color: white;
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 30px 30px 20px;
+    margin-top: 50px;
+    background-color: white;
+    height:560px;
 }
 .contacto h3{
 	font-style: italic;
@@ -379,7 +381,9 @@ revista y formulario
     text-align: center;
 }
 
-
+#actividades{
+	background: url(img/textura-1jpg);
+}
 /*----------------------------------------
 actividades
 -----------------------------------------*/
@@ -390,6 +394,13 @@ actividades
 .colo{
 	background: blue;
 }
+
+.acti-item{
+	background:url(img/textura-1jpg);
+	height: 100%;
+}
+
+
 .acti-item img{
 	border-radius: 5px;
 	width: 100%;
@@ -398,7 +409,7 @@ actividades
 	text-align: center;
 	font-size: 1.5em;
 	text-transform: uppercase;
-
+	color: #000;
 }
 
 .divi hr{
@@ -413,6 +424,7 @@ actividades
 
 
 /*SECCION ENSAYO*/
+
 .grupo .ima{
 	height: 400px;
 	width: 400px;
@@ -493,12 +505,14 @@ contactanos
 		margin-bottom:15px;
 		color:#999999;
 		text-transform:none;
+		font-size: 2em;
 	}
 	
 	h5.company-address {
 		margin-bottom:15px;
 		color:#999999;
 		text-transform:none;
+		font-size: 1.5em;
 	}
 	
 
@@ -578,38 +592,27 @@ contactanos
 #contact-formular input[type='submit']:hover{
 	background: #02afff;  
 }
-	
+
+
+/*--------------------------------------
+footer
+-------------------------------------*/
+.cont-footer{
+	text-align: center;
+	background: #c0c0c0;
+	height: 150px;
+	width: 100%;
+	color: #fff;
+}
+.cont-social-icon li{
+	list-style: none;
+	display: inline-block;
+	z-index: 10;
+}
+.credito{
+	margin: auto;
+}
+
 /*--------------------------------------
 menu flotante
 -------------------------------------*/
-.social {
-	position: fixed; 
-	left: 0; 
-	top: 200px; 
-	z-index: 2000; }
- 
-	.social ul {
-		list-style: none;
-	}
- 
-	.social ul li a {
-		display: inline-block;
-		color:#fff;
-		background: #000;
-		padding: 10px 15px;
-		text-decoration: none;
-		-webkit-transition:all 500ms ease;
-		-o-transition:all 500ms ease;
-		transition:all 500ms ease; 
-	}
- 
-	.social ul li .icon-facebook {background:#3b5998;} 
-	.social ul li .icon-twitter {background: #00abf0;}
-	.social ul li .icon-googleplus {background: #d95232;}
-	.social ul li .icon-pinterest {background: #ae181f;}
-	.social ul li .icon-mail {background: #666666;}
- 
-	.social ul li a:hover {
-		background: #000; 
-		padding: 10px 30px; 
-	}

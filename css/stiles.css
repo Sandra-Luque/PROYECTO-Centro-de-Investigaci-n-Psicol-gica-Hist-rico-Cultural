@@ -1,35 +1,67 @@
-/**{outline: 1px solid rgba(255,0,0,04)}*/
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700italic,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
+ body{
+ 	font-family: 'Roboto Condensed', sans-serif;
+ 	color: #2b2b2b;
+ }
 section{
-	padding-top: 70px;
+	padding-top: 90px;
 }
+p{
+	font-size: 1.5em;
+	font-family: "Open Sans", Arial, sans-serif;
+	text-align: justify;
+}
+.area-teori{
+	font-size: 1.5em;
+	font-family: "Open Sans", Arial, sans-serif;
+	text-align: center;
+	padding-top: 30px;
+}
+.images-1{
+	position: relative;
+
+}
+h1{
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+}
+
 #header{
 	background: #fff;
 }
 .parallax {
-	background-position: center top !important;
-	background-attachment: scroll !important;
-	height: auto;
-	margin: 0 auto;		
+	background-image: url(../img/f-portada.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	height: 700px;
 	width: 100%;
 }
 .cont-logoo{
 	position: relative;
-	height: 200px;
+}
+.cont-logoo h1{
+	text-transform: uppercase;
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
 }
 .logo-port{
-	margin:  7% 40%;
-	background: url(../img/logo.png);
+	margin:  10% 40%;
+	background: url(../img/logito-2.png);
 	background-repeat: no-repeat;
-	height: 200px;
+	background-size: contain;
+	background-position: center;
+	height: 150px;
 }
 
 #text_slider{
 	position: relative;
 	width: 100%;
-	height: 300px;
+	height: 800px;
 	
 }
 #text_slider div{
@@ -45,7 +77,7 @@ section{
 }
 .cont-conc a{
 	position: absolute;
-	top: 85%;
+	top: 70%;
 	left: 45%;
  	border-radius:3px;	
 	font-family: 'Montserrat', sans-serif;
@@ -70,30 +102,23 @@ section{
 /*----------------------------------------
 menu
 -----------------------------------------*/
-.logoti{
-	background: url(../img/logo.png);
-	height: 55px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
 nav{
-	height: 70px;
+	height: 90px;
+	background: #2ea3f2;
 }
 .g-menu{
 	max-width: 100%;
 	position:relative;
-	background: #fff;
+	
 }
-.cont-logo{
-	height: 60px;
-	overflow: hidden;
-}
+
 .cont-menu{
 	position: absolute;
 	text-align: center;
 	width: 90%;
 	left: 50px;
 	top: 0;
+
 }
 .menu{
 	display: flex;
@@ -101,23 +126,22 @@ nav{
 	
 }
 .menu li{
-	flex: auto;
-	border-bottom: 2px solid #000;
-	
+	flex: auto;	
 }
 .menu li:hover{
-	border-bottom: 2px solid #02afff;
+	border-bottom: 2px solid #99cccc;
 	transition-duration: 1s;
 }
 .menu li a{
-	color: #000;
-	padding-bottom: 15px;
-	font-family: 'Roboto Slab', serif;
+	color: #fff;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.5em;
 	display: block;
 }
 .menu li a:hover{
-	color: #02afff;
+	color: #99cccc;
 	transition-duration: 1s;
 }
 .sticky{
@@ -127,21 +151,58 @@ nav{
 	cursor: pointer;
 	height: 70px;
 	z-index: 1000;	
+	font-family: 'Roboto Condensed', sans-serif;
+	height: 90px;
+	background: #2ea3f2;
 }
-
 
 /*----------------------------------------
 somos
 -----------------------------------------*/
+.info-cont-area{
+	color: #fff;
+	height: 200px;
+}
+.info-cont-area p{
+	font-style: italic;
+	font-family: 'Noto Serif', serif;
+}
+.btn-mas-are{
+	top: 20px;
+	text-decoration: none;
+	padding: 5px;
+	border: 2px solid #00b7c7;
+	color: #fff;
+}
 #somos{
 	text-align: center;
 }
-.images{
-	background: url(../img/banner.png);
-	height: 400px;
+.btn-mas-are:hover{
+	top: 20px;
+	text-decoration: none;
+	padding: 5px;
+	border: 2px solid #fff;
+	color: #fff;
+	font-style: italic;
+	font-family: 'Noto Serif', serif; 
 }
-
-
+.images-1{
+	background: #0977ac;
+	transition: 1s;
+}
+.images-1:hover{
+	background-image: url(../img/fondoteoria.jpg);
+	transition: 1s;
+	color: #fff;
+}
+.images-2{
+	background: #0977ac;
+	transition: 1s;
+}
+.images-2:hover{
+	background-image: url(../img/fondoteoria.jpg);
+	transition: 1s;
+}
 
 /*FIN SECCION AREAS DE INTERES*/
 /*SECCION NUESTRO EQUIPO*/
@@ -158,12 +219,27 @@ somos
 	margin-right: 10px;
 }
 .compa .miembro{
-	height: 250px;
-	width: 250px;
+	width: 270px;
 }
 .miembro img{
-	height: 250px;
-	width: 250px;
+	height: 263px;
+	width: 186px;
+	border-radius: 10px;
+}
+.miembro p{
+	color: #f9a32f;
+	font-size: 1.5em;
+	margin-top: 0;
+	text-align: center;
+	font-size: 18px;
+}
+.info-miembro{
+	font-size: 12px;
+	margin-top: 0px;
+
+}
+.miembro .apell{
+	margin-top: -15px;
 }
 .lista{
 	display: flex;
@@ -185,24 +261,10 @@ somos
 .compados .red img{
 	height: 50px;
 }
-/*FIN SECCION NUESTRO EQUIPO*/
-/*SECCION ENSAYO*/
-.grupo .ima{
-	height: 300px;
-	width: 400px;
-	margin: auto;
-}
-.grupo .titulo{
-	margin: auto;
-	height: 320px;
-	padding-top: 30px;
-}
-.grupo .ima img{
-	height: 300px;
-	width: 400px;
-}
+/*FIN SECCION NUESTRO EQUIPO
 
-/*FIN SECCION ENSAYO*/
+
+
 
 
 
@@ -216,38 +278,338 @@ revista y formulario
 	text-align: center;
 }
 .revitas-muestra{
-	margin: auto;
-	background: url(../img/revista-porta.jpg);
-	padding: 10px;
-	height: 300px;
-	width: 200px;
-}
-#formulario.btn-enviar{
-	width: 100%;
-}
-.pie{
-	background-color: #000;
-	text-align: center;
-}
-.pie .caja{
-	color: #fff;
-	display: flex;
-	padding: 0;
-	margin:  -35px auto;
-}
-.pie p img{
-	height: 18px;
-	width: 18px;
-	margin-right: 15px;
-}
-.pie .web-40 .ema{
-	height: 22px;
-	width: 22px;
+	margin: 52px 0;
+    background: url(../img/revista-porta.jpg);
+    padding: 10px;
+    background-size: contain;
+    height: 560px;
+    width: 410px;
 }
 
-/*.pie .caja img{
-	height: 15px;
-	width: 15px;
-	margin-top: 15px;
-/*	margin-right: -100px;
+
+
+
+.contacto{
+	text-align: center;
+	border: 1px solid #CED5D7;
+	border-radius: 6px;
+	padding: 30px 30px 20px;
+	margin-top: 50px;
+	background-color: white;
+}
+.contacto h3{
+	font-style: italic;
+	font-family: 'Noto Serif', serif;
+}
+.contacto label{
+	display: block; 
+	color: #1d1c1c;
+	text-align: left;
+}
+.contacto div{
+	margin-bottom: 15px;
+}
+.contacto input[type='text'], .contacto textarea{
+	padding: 7px 6px;
+	width: 294px;
+	border: 1px solid rgba(24, 49, 139, 0.7);
+	resize: none;
+	box-shadow:0 0 0 3px #EEF5F7;
+	margin: 5px auto;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus{
+	outline: none;
+	box-shadow:0 0 0 3px #02afff;
+}
+.contacto input[type='text'].invalido, .contacto textarea.invalido{
+	box-shadow:0 0 0 3px #02afff;
+}
+.contacto input[type='submit']{
+	border: 1px solid #CED5D7;
+	box-shadow:0 0 0 3px #EEF5F7;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #fff;
+	background: rgba(24, 49, 102, 1);
+	
+}
+.contacto input[type='submit']:hover{
+	background: #02afff;  
+}
+.contacto input[type='submit']:active{
+	background: #02afff; 
+}
+.error{
+    background-color: #ff812d;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    padding: 6px 12px;
+    position: absolute;
+}
+.error:before{
+    border-color: transparent #ff812d transparent transparent;
+    border-style: solid;
+    border-width: 6px 8px;
+    content: "";
+    display: block;
+    height: 0;
+    left: -16px;
+    position: absolute;
+    top: 8px;
+    width: 0;
+}
+.result_fail{
+    background: none repeat scroll 0 0 #BC1010;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+}
+.result_ok{
+    background: none repeat scroll 0 0 #1EA700;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+/*----------------------------------------
+actividades
+-----------------------------------------*/
+/*	overflow: auto;
+	height: 200px;
 }*/
+
+.colo{
+	background: blue;
+}
+.acti-item img{
+	border-radius: 5px;
+	width: 100%;
+}
+.acti-item .acti-item-title{
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+
+}
+
+.divi hr{
+	background: #A4A4A4;
+	opacity: .2;
+	height: 4px;
+	width: 90%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+/*SECCION ENSAYO*/
+.grupo .ima{
+	height: 400px;
+	width: 400px;
+	margin: auto;
+}
+.grupo .titulo{
+	margin:  0 auto;
+	height: 400px;
+	
+}
+.grupo .ima img{
+	height: 100%;
+	width: 400px;
+}
+.titulo a{
+	color: #fff;
+	margin: 10px;
+	
+}
+.titulo button{
+	background-color: rgba(24, 49, 102, 1);
+	border-bottom: #02afff;
+	border-radius: 10px;
+}
+.titulo button:hover{
+	height: 30px;
+	background-color: #02afff;
+	border-bottom: #02afff;
+}
+/*FIN SECCION ENSAYO*/
+
+
+/*----------------------------------------
+contactanos
+-----------------------------------------*/
+
+.cont-img-cont{
+	background: url(../img/separator1.jpg);
+	background-attachment: fixed;
+	top: 0;
+	height: 400px;
+	width: 100%;
+}
+.cont-bakgraum{
+	height: 400px;
+	width: 100%;
+	background: rgba(0, 6, 15, 0.8);
+}
+.contact-details {
+		text-align:center;
+		width:100%;
+	}
+
+.phone-icon {
+		width:60px;
+		height:60px;
+		margin:0 auto;
+		margin-bottom:40px;
+	}
+
+.company-phone a {
+		color:#fff;
+		background-color:rgba(255,255,255,0.15);
+    	text-align: center;
+		font-size:72px;
+		line-height:72px;
+		font-family: 'Montserrat', sans-serif;
+		padding:10px 20px;
+		border-radius:3px;
+		margin-bottom:30px;
+		display:inline-block;
+	}
+.company-phone a:hover {
+		color:#fff;
+	}
+	
+	h5.company-email {
+		margin-bottom:15px;
+		color:#999999;
+		text-transform:none;
+	}
+	
+	h5.company-address {
+		margin-bottom:15px;
+		color:#999999;
+		text-transform:none;
+	}
+	
+
+
+/*---------------------------
+	formulario-2
+-----------------------------*/
+.section-title {
+		width:100%;
+}
+.border {
+	background: none repeat scroll 0 0 #999999;
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 100px;
+	margin-bottom:40px;
+}
+.center{
+	text-align: center;
+}
+.pos-izq,.pos-derec{
+	top: 10px;
+}
+	
+#contact-formular input[type="text"], textarea {
+		color: #1d1c1c;
+		font-size: 14px;
+		font-family: 'Roboto Condensed', sans-serif;
+		height: 40px;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		width: 94%;
+		background:#f5f5f5;
+		border-radius:3px;
+		margin-bottom:20px;
+		border: 1px solid rgba(24, 49, 139, 0.7);
+		box-shadow: 0 0px 3px rgba(0, 0, 0, 0.22) inset;
+		-moz-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.22) inset;
+		-webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.22) inset;
+		-o-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.22) inset;
+		transition: all 0.2s linear;
+		-moz-transition: all 0.2s linear;
+		-webkit-transition: all 0.2s linear;
+		-o-transition: all 0.2s linear;
+	}
+	#contact-formular input[type=text]:focus, #contact-formular textarea:focus, input[type=email]:focus {
+		box-shadow:0 0 0 3px #02afff;
+
+	}
+	
+	#contact-formular textarea {
+		height:160px;
+		resize:none;
+	}
+	
+	#contact-formular input[type="submit"]	{
+		position: relative;
+   		color: #fff;
+    	margin: 20px auto;
+		padding: 16px 30px;
+		border-radius: 5px;
+		background: rgba(24, 49, 102, 1);
+		font-size: 14px;
+		letter-spacing:0;
+		line-height:14px;
+		cursor:pointer;
+		border-radius:3px;
+		transition:all 0.3s ease 0s;
+		-moz-transition:all 0.3s ease 0s;
+    	-webkit-transition:all 0.3s ease 0s;
+    	-o-transition:all 0.3s ease 0s;
+		text-align:center;
+	}
+#contact-formular input[type='submit']:hover{
+	background: #02afff;  
+}
+	
+/*--------------------------------------
+menu flotante
+-------------------------------------*/
+.social {
+	position: fixed; 
+	left: 0; 
+	top: 200px; 
+	z-index: 2000; }
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; 
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} 
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+ 
+	.social ul li a:hover {
+		background: #000; 
+		padding: 10px 30px; 
+	}
